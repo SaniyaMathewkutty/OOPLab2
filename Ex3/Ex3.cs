@@ -29,16 +29,29 @@ namespace Lab2
             string filePath = "results.txt";
             string[] fileContents = File.ReadAllLines(filePath); // array containing all the text in the file
         
-            // Call the method to calculate points in the file
+            // Call the method to calculate points from the contents in the file
             int totalPoints = CalculatePoints(fileContents);
+
+            // Print output to console
+            Console.Write($"The total points are {totalPoints}");
+
+            Console.ReadLine();
         
         }
 
-        private static int CalculatePoints(string[] data) // takes in string[] data, returns an int
+        private static int CalculatePoints(string[] data) // takes in string array "data", returns an int
         {
             // Initialise arrays for grade boundaries and higher level points
             int[] gradeBoundaries = new int[8] { 90, 80, 70, 60, 50, 40, 30, 0 };
             int[] higherPoints = new int[8] { 100, 88, 77, 66, 56, 46, 37, 0 };
+
+            // Calculate total points
+            int totalPoints = 0, points = 0, result = 0;
+
+            for (int i = 0; i < data.Length; i++)
+            {
+
+            }
         }
     }
 }
