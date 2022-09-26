@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Get input from user
+            Console.Write("Enter your name : ");
+            string studentName = Console.ReadLine();
+
+            Console.Write("Enter your student number : ");
+            string studentNumber = Console.ReadLine();
+
+
         }
     }
 }
