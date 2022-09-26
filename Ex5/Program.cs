@@ -11,6 +11,10 @@
             Console.Write("Enter your student number : ");
             string studentNumber = Console.ReadLine();
 
+            // Get subject info
+
+
+
 
         }
     }
