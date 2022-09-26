@@ -1,7 +1,7 @@
 ﻿/*
     Name: Saniya Mathewkutty
     Date: 26/09/2022
-    Description: Lab 1, Exercise 2: Foreach statement with file handling
+    Description: Lab 1, Exercise 2: Foreach loop with file handling
 
 Read a text file which contains 7 grades. Calculate the total points and append this 
 total to the original file. Don’t worry about Higher or Ordinary level here but use 
