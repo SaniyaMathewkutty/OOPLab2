@@ -58,7 +58,7 @@ namespace Lab2
                     totalPoints += points;
 
                 }
-                // Append the file
+                // Append the file with the calculated totalPoints figure
                 File.AppendAllText(filePath, Environment.NewLine + "Total Points: " + totalPoints.ToString());
 
             }

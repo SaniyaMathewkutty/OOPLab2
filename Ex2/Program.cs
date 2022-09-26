@@ -30,12 +30,37 @@ namespace Lab2
                 string[] fileContents = File.ReadAllLines(filePath);
 
                 int totalPoints = 0, points = 0, result = 0;
-                for (int i = 0; i < fileContents.Length; i++)
-                {
-                    result = int.Parse(fileContents[i]);
 
-                    if 
+                foreach (string line in fileContents) // foreach loop
+                {
+                    result = int.Parse(line);
+
+                    if (result >= 90)
+                        points = 100;
+                    else if (result >= 80)
+                        points = 88;
+                    else if (result >= 80)
+                        points = 77;
+                    else if (result >= 80)
+                        points = 66;
+                    else if (result >= 80)
+                        points = 56;
+                    else if (result >= 80)
+                        points = 46;
+                    else if (result >= 80)
+                        points = 37;
+                    else
+                        points = 0;
+
+                    // Append the points to totalPoints after calculation
+                    totalPoints += points;
                 }
+                // Append the file with the calculation of total points
+                File.AppendAllText(filePath, Environment.NewLine + "Total Points: " + totalPoints.ToString());
+            }
+            catch(IOException io) // Catches an error for input/output 
+            {
+                Console.Write(io.Message);
             }
         }
     }
