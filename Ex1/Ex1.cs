@@ -1,7 +1,7 @@
 ﻿/*
     Name: Saniya Mathewkutty
     Date: 26/09/2022
-    Description: Lab 1, Exercise 1
+    Description: Lab 2, Exercise 1:
 
 Read a text file which contains 7 grades. Calculate the total points and append this 
 total to the original file. Don’t worry about Higher or Ordinary level here but use 
@@ -23,7 +23,7 @@ namespace Lab2
         static void Main(string[] args)
         {
             // Read in the file
-            string filePath = "results.txt"; // No file path because this text file is in the net6.0 folder in Debug
+            string filePath = "results.txt"; // Located at C:\Users\S00223097\OneDrive - Atlantic TU\OOP\Lab2\Lab2\Ex1\bin\Debug\net6.0
 
             try // start of try block
             {
