@@ -20,7 +20,15 @@ namespace Ex4
     {
         static void Main(string[] args)
         {
-            
+            // Read in the file
+            string file = "results.txt";
+            string[] fileContents = File.ReadAllLines(file);
+
+            int totalPoints = CalculatePoints(fileContents);
+
+            Console.WriteLine($"Total points = {totalPoints}");
+
+            Console.ReadLine();
         }
 
         private static int CalculatePoints(string[] grades)

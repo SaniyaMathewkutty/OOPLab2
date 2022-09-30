@@ -1,6 +1,6 @@
 ﻿namespace Ex6
 {
-    class Program
+    class Ex6
     {
         static void Main(string[] args)
         {
