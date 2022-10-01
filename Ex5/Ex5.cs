@@ -17,7 +17,7 @@
             string[] levels = new string[7];
             int[] points = new int[7];
 
-            // Loop through the subjects 
+            // Loop through the subject. get input from user
 
             for (int i = 1; i <= 7; i++)
             {
