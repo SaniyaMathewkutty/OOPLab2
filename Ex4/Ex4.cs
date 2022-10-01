@@ -41,7 +41,7 @@ namespace Ex4
             int[] higherPoints = new int[8] { 100, 88, 77, 66, 56, 46, 37, 0 };
 
             // Loop through grades in file in
-            for (int i = 0; i < grades.Length, i++)
+            for (int i = 0; i < grades.Length; i++)
             {
                 result = int.Parse(grades[i]); // Convert i'th number from file into int
 
@@ -54,7 +54,11 @@ namespace Ex4
                         break; // break out of nested loop at this point
                     }
                 }
+
+                totalPoints += points;
             }
+
+            return totalPoints;
 
         }
     }
