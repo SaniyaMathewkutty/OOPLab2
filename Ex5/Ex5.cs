@@ -38,7 +38,7 @@ namespace Ex5
 
             // Display results
             
-
+            DisplayPoints(studentName, studentNumber, results, subjects, levels, points, totalPoints);
 
 
         }
@@ -84,7 +84,7 @@ namespace Ex5
             return totalPoints;
         }
     
-        private static void DisplayPoints(string name, StringInfo studentNo, string[] results, string[] subjects, string[] levels, int[] points, int totalPoints)
+        private static void DisplayPoints(string name, string studentNo, string[] results, string[] subjects, string[] levels, int[] points, int totalPoints)
         {
             Console.Write("Name :  {0}", name);
             Console.Write("Student Number : {0}", studentNo);
