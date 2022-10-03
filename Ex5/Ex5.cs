@@ -1,5 +1,7 @@
 ﻿using System.Globalization;
 
+using CAOPointsCalculator;
+
 namespace Ex5
 {
     class Program
@@ -38,7 +40,7 @@ namespace Ex5
 
             // Display results
             
-            DisplayPoints(studentName, studentNumber, results, subjects, levels, points, totalPoints);
+            CAOCalculator.DisplayPoints(studentName, studentNumber, results, subjects, levels, points, totalPoints);
 
 
         }
@@ -51,6 +53,7 @@ namespace Ex5
             // Initialise arrays for grade boundaries and higher level points
             int[] gradeBoundaries = new int[8] { 90, 80, 70, 60, 50, 40, 30, 0 };
             int[] higherPoints = new int[8] { 100, 88, 77, 66, 56, 46, 37, 0 };
+            int[] ordinaryPoints = new int[8] { 100, 88, 77, 66, 56, 46, 37, 0 };
 
             // Loop through grades in file 
             for (int i = 0; i < data.Length; i++)
@@ -84,18 +87,18 @@ namespace Ex5
             return totalPoints;
         }
     
-        private static void DisplayPoints(string name, string studentNo, string[] results, string[] subjects, string[] levels, int[] points, int totalPoints)
-        {
-            Console.Write("Name :  {0}", name);
-            Console.Write("Student Number : {0}", studentNo);
+        //private static void DisplayPoints(string name, string studentNo, string[] results, string[] subjects, string[] levels, int[] points, int totalPoints)
+        //{
+        //    Console.Write("Name :  {0}", name);
+        //    Console.Write("Student Number : {0}", studentNo);
 
-            for (int i = 0; i < results.Length; i++)
-            {
-                Console.Write($"{subjects[i],20} {levels[i],13} {results[i], 13} {points[i], 13});
-            }
+        //    for (int i = 0; i < results.Length; i++)
+        //    {
+        //        Console.Write($"{subjects[i],20} {levels[i],13} {results[i], 13} {points[i], 13});
+        //    }
 
-            Console.WriteLine("Total points = {0}", totalPoints);
-        }
+        //    Console.WriteLine("Total points = {0}", totalPoints);
+        //}
    
         private static void WriteInfoToFile(string name)
         {
